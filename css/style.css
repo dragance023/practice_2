@@ -1,0 +1,186 @@
+nav {
+  position: relative;
+  height: 70px;
+  background: #ffffff;
+  overflow: hidden; }
+  nav img {
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 300px;
+    top: 10px; }
+  nav a {
+    color: #464545; }
+  nav ul {
+    list-style: none;
+    position: absolute;
+    right: 320px;
+    top: 20px; }
+    nav ul li {
+      display: inline-block;
+      padding: 1rem; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav img {
+    left: 100px; }
+  nav > ul {
+    right: 80px; } }
+@media (min-width: 280px) and (max-width: 768px) {
+  nav {
+    justify-content: center;
+    height: 250px; }
+    nav img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 20px; }
+    nav > ul {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 60%;
+      width: 300px; }
+      nav > ul li {
+        display: block;
+        text-align: center; } }
+.main-section {
+  width: 100vw;
+  height: 60vh;
+  background: #e26868; }
+  .main-section h1 {
+    color: #464545;
+    text-align: center;
+    padding-top: 170px; }
+
+.second-section {
+  width: 100vw;
+  height: 60vh;
+  background: #4a3f60; }
+  .second-section .grid-container {
+    margin: 0 auto;
+    width: 55%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto minmax(auto, 1fr));
+    grid-row-gap: 50px;
+    align-content: center;
+    overflow: hidden; }
+    .second-section .grid-container .heading-set {
+      color: #fff;
+      font-size: 17px;
+      padding: 45px 0 0 60px;
+      align-self: center;
+      justify-self: start; }
+      .second-section .grid-container .heading-set:hover.icon-circle {
+        border: #e26868 1px solid;
+        transition: 500ms; }
+  .second-section .icon-circle {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: #3e3253b9;
+    position: relative; }
+    .second-section .icon-circle img {
+      width: 70px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .second-section .grid-container {
+    width: 75%;
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 20px; }
+    .second-section .grid-container .heading-set {
+      color: #fff;
+      font-size: 20px;
+      padding: 0;
+      justify-self: center; }
+  .second-section .icon-circle {
+    justify-self: center; }
+  .second-section .head-1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center; }
+  .second-section .circle-4 {
+    grid-column: 2/3;
+    grid-row: 3/4; } }
+@media (min-width: 280px) and (max-width: 768px) {
+  .second-section {
+    height: 900px; }
+    .second-section .grid-container {
+      width: 100%;
+      grid-template-columns: 400px;
+      grid-template-rows: auto;
+      grid-row-gap: 40px;
+      justify-content: center; }
+      .second-section .grid-container .icon-circle {
+        grid-column: 1/-1;
+        justify-self: center; }
+      .second-section .grid-container .heading-set {
+        color: #fff;
+        font-size: 20px;
+        padding: 0;
+        justify-self: center; } }
+footer {
+  height: 65vh;
+  width: 100%;
+  text-align: center;
+  overflow: hidden; }
+  footer h1 {
+    margin-top: 100px; }
+  footer span {
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    color: #929191; }
+
+.form {
+  width: 60%;
+  margin: 0 auto;
+  background: #eeeeee;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  margin-top: 25px; }
+  .form input[type="text"] {
+    grid-column: 1/2;
+    margin: 30px 0 20px 20px;
+    height: 40px; }
+  .form input[type="email"] {
+    grid-column: 2/-1;
+    margin: 30px 20px 20px 0; }
+  .form textarea {
+    grid-column: 1/-1;
+    margin: 0 20px 30px 20px; }
+  .form input[placeholder], .form textarea[placeholder] {
+    padding: 5px 0 0 20px; }
+
+.form, input, textarea {
+  color: #68d4db;
+  font-weight: 600;
+  border-radius: 5px; }
+
+@media (min-width: 280px) and (max-width: 768px) {
+  .form input[type="text"] {
+    grid-column: 1/-1;
+    margin-right: 20px; }
+  .form input[type="email"] {
+    grid-column: 1/-1;
+    margin: 0 20px 20px 20px;
+    height: 40px; }
+  .form textarea[placeholder] {
+    padding: 18px 0 0 20px; } }
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden; }
+  * a {
+    text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

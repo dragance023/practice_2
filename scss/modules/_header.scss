@@ -1,0 +1,64 @@
+@import "partials/colors";
+@import "partials/mixins";
+@import "partials/vars";
+nav {
+    position: relative;
+    height: 70px;
+    background: $footer-nav-color;
+    overflow: hidden;
+    
+    img {
+        width: 50px;
+        border-radius: 50%;
+        position: absolute;
+        left: 300px;
+        top: 10px;
+    }
+    a{
+        color: $font-dark-color;
+    }
+    ul {
+        list-style: none;
+        position: absolute;
+        right: 320px;
+        top: 20px;
+        li {
+            display: inline-block;
+            padding: 1rem;
+        }
+    }
+}
+
+@include tablet {
+    nav {
+        img {
+            left: 100px;
+        }
+        &>ul {
+            
+            right: 80px; 
+         }
+    } 
+}
+@include mobile {
+    nav {
+            justify-content: center;
+            height: 250px;
+        img {
+            @include absolute-center() {
+                top: 20px;
+            }
+            
+        }
+        &>ul {
+            @include absolute-center() {
+                top: 60%;
+            }
+            width: 300px;
+            li {
+                display: block;
+                text-align: center;
+            }
+         }
+    } 
+}

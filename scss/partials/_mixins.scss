@@ -1,0 +1,63 @@
+@import "vars";
+
+@mixin reset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+        a {
+            text-decoration: none;
+        }
+}
+@mixin margin-center {
+    margin: 0 auto;
+}
+
+@mixin clear-fix {
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+@mixin absolute-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @content;
+}
+
+@mixin rounded {
+    border-radius: 5px
+}
+@mixin headings-set {
+    color: #fff;
+    font-size: 17px;
+    padding: 45px 0 0 60px;
+    align-self: center;
+    justify-self: start;
+}
+@mixin headings-set-tablet {
+    color: #fff;
+    font-size: 20px;
+    padding: 0;
+    justify-self: center;
+}
+@mixin headings-set-mobile {
+    color: #fff;
+    font-size: 20px;
+    padding: 0;
+    justify-self: center;
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}){
+        @content;
+    }
+}
+@mixin mobile {
+    @media(min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}

@@ -1,0 +1,14 @@
+@import "modules/header";
+@import "modules/content";
+@import "modules/footer";
+@import "partials/colors";
+@import "partials/mixins";
+@import "partials/vars";
+
+* {
+    @include reset();
+    font-family: $main-font;
+    overflow-x: hidden;
+}
+
+

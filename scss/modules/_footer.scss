@@ -1,0 +1,70 @@
+@import "partials/colors";
+@import "partials/mixins";
+@import "partials/vars";
+
+
+footer {
+    height: 65vh;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    h1 {
+        margin-top: 100px;
+    }
+    span {
+        display: block;
+        padding: 5px;
+        font-weight: 700;
+        color: $form-subheading-color;
+    }
+}
+.form {
+    width: 60%;
+    @include margin-center;
+    background: $form-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    margin-top: 25px;
+        input[type="text"]{
+            grid-column: 1/2;
+            margin: 30px 0 20px 20px;
+            height: 40px;
+        }
+        input[type="email"]{
+            grid-column: 2/-1;
+            margin: 30px 20px 20px 0;
+        }
+        textarea {
+            grid-column: 1/-1;
+            margin: 0 20px 30px 20px;
+        }
+        input[placeholder],textarea[placeholder] {
+            padding: 5px 0 0 20px;
+        }
+
+}
+
+.form, input, textarea {
+    color: $form-text-color;
+    font-weight: 600;
+
+    @include rounded();
+}
+@include mobile {
+
+    .form {
+        input[type="text"]{
+            grid-column: 1/-1;
+            margin-right: 20px;
+        }
+        input[type="email"]{
+            grid-column: 1/-1;
+            margin: 0 20px 20px 20px; 
+            height: 40px;
+        }
+        textarea[placeholder] {
+            padding: 18px 0 0 20px;
+        }
+    }
+}
