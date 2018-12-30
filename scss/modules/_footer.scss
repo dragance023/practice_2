@@ -52,19 +52,21 @@ footer {
     @include rounded();
 }
 @include mobile {
-
-    .form {
-        input[type="text"]{
-            grid-column: 1/-1;
-            margin-right: 20px;
+footer {
+    height: 110vh;
+        .form {
+            input[type="text"]{
+                grid-column: 1/-1;
+                margin-right: 20px;
+            }
+            input[type="email"]{
+                grid-column: 1/-1;
+                margin: 0 20px 20px 20px; 
+                height: 40px;
+            }
+            textarea[placeholder] {
+                padding: 18px 0 0 20px;
+            }
         }
-        input[type="email"]{
-            grid-column: 1/-1;
-            margin: 0 20px 20px 20px; 
-            height: 40px;
-        }
-        textarea[placeholder] {
-            padding: 18px 0 0 20px;
-        }
-    }
+    }   
 }

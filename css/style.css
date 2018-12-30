@@ -25,7 +25,7 @@ nav {
     left: 100px; }
   nav > ul {
     right: 80px; } }
-@media (min-width: 280px) and (max-width: 768px) {
+@media (min-width: 100px) and (max-width: 768px) {
   nav {
     justify-content: center;
     height: 250px; }
@@ -105,7 +105,7 @@ nav {
   .second-section .circle-4 {
     grid-column: 2/3;
     grid-row: 3/4; } }
-@media (min-width: 280px) and (max-width: 768px) {
+@media (min-width: 100px) and (max-width: 768px) {
   .second-section {
     height: 900px; }
     .second-section .grid-container {
@@ -119,7 +119,7 @@ nav {
         justify-self: center; }
       .second-section .grid-container .heading-set {
         color: #fff;
-        font-size: 20px;
+        font-size: 14px;
         padding: 0;
         justify-self: center; } }
 footer {
@@ -161,16 +161,18 @@ footer {
   font-weight: 600;
   border-radius: 5px; }
 
-@media (min-width: 280px) and (max-width: 768px) {
-  .form input[type="text"] {
-    grid-column: 1/-1;
-    margin-right: 20px; }
-  .form input[type="email"] {
-    grid-column: 1/-1;
-    margin: 0 20px 20px 20px;
-    height: 40px; }
-  .form textarea[placeholder] {
-    padding: 18px 0 0 20px; } }
+@media (min-width: 100px) and (max-width: 768px) {
+  footer {
+    height: 110vh; }
+    footer .form input[type="text"] {
+      grid-column: 1/-1;
+      margin-right: 20px; }
+    footer .form input[type="email"] {
+      grid-column: 1/-1;
+      margin: 0 20px 20px 20px;
+      height: 40px; }
+    footer .form textarea[placeholder] {
+      padding: 18px 0 0 20px; } }
 * {
   margin: 0;
   border: 0;
