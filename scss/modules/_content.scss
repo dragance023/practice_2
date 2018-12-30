@@ -28,10 +28,6 @@
         overflow: hidden;
         .heading-set {
             @include headings-set();
-            &:hover.icon-circle {
-                border: $main-section-color 1px solid;
-                transition: 500ms;
-            }
         }
     }
 
